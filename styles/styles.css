@@ -1,0 +1,70 @@
+/*General Styling*/
+
+body {
+  color: black;
+  font-family: 'Questrial', sans-serif;
+}
+
+p, li {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+/*Navbar Styling*/
+
+.navbar-default img {
+  width: 3vw;
+  height: auto;
+}
+
+.navbar-default {
+  background-color: #1A2227;
+  border: 0;
+  border-radius: 0;
+}
+
+/*Landing Page Styling*/
+
+#landing-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/image6.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 35vh 0;
+  text-align: center;
+  color: #DAA520;
+}
+
+#landing-page h1 {
+  font-size: 5em;
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+#founding-story-carousel img {
+  margin-left: 5vw;
+  height: 80vh;
+  width: auto;
+}
+
+#mission-statement, #vision-statement {
+  text-align: center;
+  padding: 5vh 0;
+}
+
+#mission-statement {
+  background-color: #DAA520;
+}
+
+#dedication img {
+  padding-top: 10vh;
+  width: 100%;
+}
+
+#vision-statement {
+  background-color: #1A2227;
+  color: white;
+}

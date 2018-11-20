@@ -10,6 +10,9 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,300i,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -39,85 +42,128 @@
   </head>
   <body>
     <!-- Load Screen -->
-    <div id="load_screen">
-      <div id="loading">
-        <h1>Awesomeness loading...</h1>
-      </div>
-    </div>
+    <!-- <div id="load_screen"> <div id="loading"> <h1>Awesomeness loading...</h1> </div> </div> -->
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#founding-story">Founding Story</a>
-          </li>
-          <li>
-            <a href="#mission-vision">Mission and Vision</a>
-          </li>
-          <li>
-            <a href="#dedication">Dedication</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar d-none">
+      <ul class="nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#founding-story">Our Story</a>
+        </li>
+        <li>
+          <a href="#mission-vision">Mission and Vision</a>
+        </li>
+        <li>
+          <a href="#dedication">Dedication</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
     <div id="landing-screen">
-      <h1>Chao and Friends</h1>
-      <h1>Foundation</h1>
+      <h1>Chao and Friends
+        <br>
+        Foundation</h1>
       <h3>Promoting literacy in Kenya's rural areas</h3>
+      <a href="#founding-story">
+        <i class="fas fa-chevron-circle-down animated infinite pulse"></i>
+      </a>
     </div>
     <div id="founding-story">
-      <h2>Founding Story</h2>
-      <p>One evening, August 2017, some time after elections, I was arranging the books underneath our dining table, busy ranting how we should get rid of the no-longer used accumulating books that were piled up under the dining table. So, my mom suggested
-        that we should give them away to kids in Taita, since they can't afford books. So I stopped ranting, finished arranging the books and thoughts started streaming in on how I could impact lives. So eventually I told my mom I wanted to start collecting
-        books and put up libraries in schools. She told me to consult my Uncle Boli who had done a similar project some time back. So he advised that I had to work with a team of people and plan adversely in order since its a bulky project. It was back to
-        the drawing board which is where I came up with this organization.</p>
-      <h5>-Mitchelle Chao, Founder</h5>
+      <div class="container">
+        <h2 class="heading">Founding Story</h2>
+        <hr>
+        <p>
+          <i class="fas fa-quote-left"></i>
+          One evening, August 2017, some time after elections, I was arranging the books underneath our dining table, busy ranting how we should get rid of the no-longer used accumulating books that were piled up under the dining table. So, my mom suggested
+          that we should give them away to kids in Taita, since they can't afford books. So I stopped ranting, finished arranging the books and thoughts started streaming in on how I could impact lives. So eventually I told my mom I wanted to start collecting
+          books and put up libraries in schools. She told me to consult my Uncle Boli who had done a similar project some time back. So he advised that I had to work with a team of people and plan adversely in order since its a bulky project. It was back to
+          the drawing board which is where I came up with this organization.</p>
+        <h5>-Mitchelle Chao, Founder</h5>
+      </div>
     </div>
     <div id="mission-vision">
       <div class="mission">
-        <h2>Mission</h2>
-        <p>Promoting literacy and improving education standards among primary school children.</p>
+        <img src="assets/image1.jpeg" alt="">
+        <div class="content">
+          <h2 class="heading">Mission</h2>
+          <hr>
+          <p>Promoting literacy and improving education standards among primary school children.</p>
+        </div>
       </div>
       <div class="vision">
-        <h2>Vision</h2>
-        <p>Helping kids develop a reading culture.</p>
-        <p>Promoting learning, improving knowledge, education and literacy levels among primary school kids.</p>
-        <p>Helping kids get value out of their education and get them to appreciate the need for and importance of education</p>
+        <div class="content">
+          <h2 class="heading">Vision</h2>
+          <hr>
+          <ul>
+            <li>Helping kids develop a reading culture.</li>
+            <li>Promoting learning, improving knowledge, education and literacy levels among primary school kids.</li>
+            <li>Helping kids get value out of their education and get them to appreciate the need for and importance of education</li>
+          </ul>
+        </div>
+        <img class="d-none" src="assets/image1.jpeg" alt="">
+      </div>
+    </div>
+    <div id="newsletter">
+      <div class="container">
+        <p>Subscribe to Our Newsletter to be the first to find out about our events and milestones.</p>
+        <form action="">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="text" name="email" placeholder="Your Email Address">
+          <button type="submit" name="button" class="btn">Subscribe</button>
+        </form>
       </div>
     </div>
     <div id="dedication">
-      <h2>Dedication</h2>
-      <ol>
-        <li>This organisation is founded on starting up initiatives that help primary school children, especially those in rural 'needy' set-ups to get value for their education.</li>
-        <li>To remind the children that they are not forgotten and that they also can get a proper education. They can access resources to expand their knowledge beyond classroom level and think in multiple dimensions and perspectives.</li>
-        <li>It also goes out to that kid in school who would want to pronounce a word right, learn a different language in the future, wants to read as many novels as they can and wonders how the universe came to be, all the kids who want to learn the most
-          basic to the most complex concpects a mind can comprehend but lack the resources and infrastructure to get the knowledge.</li>
-      </ol>
+      <div class="container">
+        <h2 class="heading">Dedication</h2>
+        <hr>
+        <ol>
+          <li>This organisation is founded on starting up initiatives that help primary school children, especially those in rural 'needy' set-ups to get value for their education.</li>
+          <li>To remind the children that they are not forgotten and that they also can get a proper education. They can access resources to expand their knowledge beyond classroom level and think in multiple dimensions and perspectives.</li>
+          <li>It also goes out to that kid in school who would want to pronounce a word right, learn a different language in the future, wants to read as many novels as they can and wonders how the universe came to be, all the kids who want to learn the most
+            basic to the most complex concpects a mind can comprehend but lack the resources and infrastructure to get the knowledge.</li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div id="special-thanks">
-    <h3>Special Thanks To:</h3>
-    <p>Everyone I've worked with to make the whole project a success.</p>
-    <p>My parents for being my #1 supports.</p>
-    <p>My grandfathers, who were great educationists.</p>
-    <p>Uncle Boli, who gave me guidelines.</p>
-  </div>
-  <div id="footer">
-    <h2>Find Us:</h2>
+    <div id="gallery">
+      <img src="assets/image1.jpeg" alt="">
+      <img src="assets/image2.jpeg" alt="">
+      <img src="assets/image3.jpeg" alt="">
+      <img src="assets/image4.jpeg" alt="">
+      <img src="assets/image5.jpeg" alt="">
+      <img src="assets/image6.jpeg" alt="">
+      <img src="assets/image7.jpeg" alt="">
+      <img src="assets/image8.jpeg" alt="">
+    </div>
+    <div class="button-container"></div>
+    <div id="contact">
+      <div id="special-thanks">
+        <h3>Special Thanks To:</h3>
+        <ul>
+          <li>Everyone I've worked with to make the whole project a success.</li>
+          <li>My parents for being my #1 supports.</li>
+          <li>My grandfathers, who were great educationists.</li>
+          <li>Uncle Boli, who gave me guidelines.</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <h2>Find Us:</h2>
+      </div>
+    </div>
     <div class="footnote">
       <p>
-        Mitchelle and Friends Foundation |
+        Chao and Friends Foundation |
         <script type="text/javascript">
           document.write(new Date().getFullYear());
         </script>
       </p>
     </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,4 +1,13 @@
-:root {}
+:root {
+  --primary: #FFD80A;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -8,6 +17,27 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+.container {
+  padding: 5em 30% 1em 30%;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: .4em;
+}
+
+hr {
+  border: 2px solid var(--primary);
+  width: 100px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+p, li {
+  font-size: 1.2em;
 }
 
 /* Load Screen */
@@ -33,34 +63,37 @@ a:hover {
 
 /* Navbar */
 .navbar ul {
+  position: fixed;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: baseline;
   font-size: 1.5em;
   font-weight: 700;
-  margin: 0.3em;
   transition: all 0.3s ease-in-out;
+  padding: 0.8em;
+  width: 100%;
 }
 
 .navbar a {
   padding: 0 1em;
+  color: white;
+}
+
+.navbar a:hover {
+  color: var(--primary);
 }
 
 /* Scrolled Navbar */
 .navbar ul.scrolled {
-  position: fixed;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  background-color: black;
   top: 0;
-  left: 0;
-  background-color: white;
-  border-bottom: 1px solid var(--primary);
   margin: 0;
-  width: 100%;
-  padding: 0.5em 10%;
   z-index: 100;
+}
+
+.navbar ul.scrolled a {
+  color: var(--primary);
 }
 
 #mobileNav {
@@ -70,4 +103,157 @@ a:hover {
 
 .fa-bars {
   display: none;
+}
+
+/* Landing Screen Styling */
+#landing-screen {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/image6.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  text-align: center;
+}
+
+#landing-screen h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+#landing-screen h3 {
+  font-size: 2em;
+}
+
+#landing-screen i {
+  position: absolute;
+  bottom: 2em;
+  font-size: 2em;
+}
+
+/* Mission and Vision Styling */
+#mission-vision img {
+  width: 100%;
+}
+
+#mission-vision .content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.mission, .vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  margin-top: 1em;
+}
+
+#newsletter {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image6.jpeg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 4em;
+}
+
+/* Gallery Styling */
+#gallery img {
+  height: 400px;
+  width: auto;
+  margin: 1em;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  margin: .5em;
+  background: var(--primary);
+  border: 0;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.button-container button:hover {
+  background: black;
+  transition: all 0.3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button-container i.fas {
+  font-size: 1.5em;
+  color: white;
+  padding: .3em;
+}
+
+/* Contact Styling */
+#contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2em;
+  padding: 0 10%;
+  background: var(--primary);
+}
+
+#special-thanks ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#special-thanks ul li {
+  padding: 0 0.5em;
+}
+
+#special-thanks ul li:before {
+  content: "\2605";
+}
+
+/* Footnote Styling */
+.footnote {
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    padding: 4em 20% 1em 20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 4em 15% 1em 15%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 4em 10% 1em 10%;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  #landing-screen h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #landing-screen h3 {
+    font-size: 1.2em;
+  }
 }
